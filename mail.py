@@ -20,7 +20,7 @@ try:
     destinatarios = ['email dos destinatarios']
     mensagem = MIMEMultipart()
     mensagem['From'] = remetente
-    mensagem['To'] = ', '.join(destinatarios)
+    mensagem['To'] = ', '.join(destinatarios) #bcc para mandar os emails sem que os destinatários vejam uns aos outros no como copia oculta!
     mensagem['Subject'] = 'Teste de envio de e-mail com Python'
 
     corpo_email = 'Olá, este é um teste de envio de e-mail com Python.'
